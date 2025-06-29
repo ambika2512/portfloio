@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambika Rani - Portfolio</title>
+    <meta name="description" content="Portfolio of Ambika Rani - Innovative Developer, Web Enthusiast, Problem Solver">
+    <meta name="author" content="Ambika Rani">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="portfolio-container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="profile-circle">
+                    <img src="https://i.postimg.cc/0j1ds8sW/IMG20231124162710.jpg" alt="Ambika Rani" class="profile-image">
+                </div>
+                <h1 class="hero-title">Ambika Rani</h1>
+                <p class="hero-subtitle">Innovative Developer • Web Enthusiast • Problem Solver</p>
+                <p class="hero-description">
+                    Ambitious Computer Science graduate skilled in modern web technologies, passionate about building impactful digital solutions.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="handleViewWork()">
+                        View My Work
+                    </button>
+                    <button class="btn btn-outline">
+                        Contact Me
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                
+                <div class="about-grid">
+                    <div class="card glass-card">
+                        <div class="card-header">
+                            <h3 class="card-title">My Journey</h3>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-content">
+                                Ambitious Computer Science Engineering graduate with a passion for software development. 
+                                Proficient in Python, HTML, CSS, JavaScript, React, C++, and database systems.
+                            </p>
+                            <p class="text-content">
+                                Experience with building and deploying web applications and projects. Eager to grow skills 
+                                in a dynamic and supportive environment and contribute innovative solutions.
+                            </p>
+                            <button class="btn btn-secondary">
+                                <i data-lucide="download"></i>
+                                Download Resume
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card glass-card">
+                        <div class="card-header">
+                            <h3 class="card-title">Education</h3>
+                        </div>
+                        <div class="card-content education-content">
+                            <div class="education-item">
+                                <div class="education-border"></div>
+                                <div class="education-details">
+                                    <h4 class="education-degree">B.Tech in Computer Science Engineering</h4>
+                                    <p class="education-institution">Chandigarh University</p>
+                                    <div class="education-meta">
+                                        <span>2025</span>
+                                        <span class="education-grade">8.1 CGPA</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="education-item">
+                                <div class="education-border"></div>
+                                <div class="education-details">
+                                    <h4 class="education-degree">Intermediate (CBSE)</h4>
+                                    <p class="education-institution">Holy Cross School, Bokaro Steel City</p>
+                                    <div class="education-meta">
+                                        <span>2021</span>
+                                        <span class="education-grade">83.4%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="education-item">
+                                <div class="education-border"></div>
+                                <div class="education-details">
+                                    <h4 class="education-degree">Matriculation (CBSE)</h4>
+                                    <p class="education-institution">Holy Cross School, Bokaro Steel City</p>
+                                    <div class="education-meta">
+                                        <span>2019</span>
+                                        <span class="education-grade">94.4%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                
+                <div class="projects-grid">
+                    <div class="card project-card gradient-purple">
+                        <div class="project-header"></div>
+                        <div class="card-header">
+                            <div class="project-title-row">
+                                <h3 class="card-title">Community Connect Web App</h3>
+                                <i data-lucide="external-link" class="project-icon"></i>
+                            </div>
+                            <p class="project-period">2024–Present</p>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-content">React + Node.js platform for community-driven event planning and volunteering, with user sign-up, event registration, and admin analytics.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card project-card gradient-blue">
+                        <div class="project-header"></div>
+                        <div class="card-header">
+                            <div class="project-title-row">
+                                <h3 class="card-title">Online Clothing Seller Application</h3>
+                                <i data-lucide="external-link" class="project-icon"></i>
+                            </div>
+                            <p class="project-period">2024</p>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-content">Full-stack e-commerce app with secure login, dynamic product display, and checkout built using React, Node.js, Express.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card project-card gradient-green">
+                        <div class="project-header"></div>
+                        <div class="card-header">
+                            <div class="project-title-row">
+                                <h3 class="card-title">Music Recommendation System</h3>
+                                <i data-lucide="external-link" class="project-icon"></i>
+                            </div>
+                            <p class="project-period">2022–2023</p>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-content">ML-powered system with content and collaborative filtering using Python, scikit-learn, and React frontend for real-time recommendations.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">scikit-learn</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">TensorFlow</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card project-card gradient-orange">
+                        <div class="project-header"></div>
+                        <div class="card-header">
+                            <div class="project-title-row">
+                                <h3 class="card-title">Study Scheduler App</h3>
+                                <i data-lucide="external-link" class="project-icon"></i>
+                            </div>
+                            <p class="project-period">Planned</p>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-content">Planner + to-do + tracker app concept for students; combines time analysis, reminders, and performance visualization.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Chart.js</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section">
+            <div class="container">
+                <h2 class="section-title">Skills & Expertise</h2>
+                
+                <div class="skills-grid">
+                    <div class="card glass-card">
+                        <div class="card-header">
+                            <h3 class="card-title">Languages</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="skills-tags">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">C++</span>
+                                <span class="skill-tag">HTML</span>
+                                <span class="skill-tag">CSS</span>
+                                <span class="skill-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card glass-card">
+                        <div class="card-header">
+                            <h3 class="card-title">Libraries & Tools</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="skills-tags">
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">TensorFlow</span>
+                                <span class="skill-tag">Redux</span>
+                                <span class="skill-tag">Power BI</span>
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">Excel</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card glass-card">
+                        <div class="card-header">
+                            <h3 class="card-title">Soft Skills</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="skills-tags">
+                                <span class="skill-tag">Leadership</span>
+                                <span class="skill-tag">Problem Solving</span>
+                                <span class="skill-tag">Team Collaboration</span>
+                                <span class="skill-tag">Innovation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Let's Connect</h2>
+                
+                <div class="contact-grid">
+                    <div class="card glass-card">
+                        <div class="card-header">
+                            <h3 class="card-title">Get In Touch</h3>
+                        </div>
+                        <div class="card-content contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon gradient-purple">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <p class="contact-label">Email</p>
+                                    <p class="contact-value">ambikarani25.12.2003@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon gradient-blue">
+                                    <i data-lucide="phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <p class="contact-label">Phone</p>
+                                    <p class="contact-value">8579948003</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon gradient-linkedin">
+                                    <i data-lucide="linkedin"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <p class="contact-label">LinkedIn</p>
+                                    <p class="contact-value">Connect with me</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card glass-card">
+                        <div class="card-header">
+                            <h3 class="card-title">Send Message</h3>
+                        </div>
+                        <div class="card-content">
+                            <form class="contact-form" id="contact-form">
+                                <div class="form-group">
+                                    <label class="form-label">Name</label>
+                                    <input type="text" class="form-input" name="user_name" placeholder="Your name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-input" name="user_email" placeholder="your.email@example.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Message</label>
+                                    <textarea class="form-textarea" name="message" rows="4" placeholder="Your message..." required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-full">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p class="footer-text">© 2024 Ambika Rani. Crafted with passion and dedication.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
